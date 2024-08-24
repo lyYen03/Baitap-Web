@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        div {
+            width: 700px;
+            height: auto;
+            padding: 5px;
+            border: 1px solid blue;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Contact Us</h2>
+
+        <fieldset>
+            <legend Align="left"> Your mesage </legend>
+
+            <table>
+                <tr>
+                    <td> To </td>
+                    <td> <input type="text" name="examplecafe" id="examplecafe" placeholder="Example Cafe"></td>
+                </tr>
+                <tr>
+                    <td> Your email </td>
+                    <td> <input type="text" name="youremail" id="youremail"></td>
+                </tr>
+                <tr>
+                    <td>Message </td>
+                    <td> <textarea name="Message" id="Message" cols="50" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Attach File</td>
+                    <td> <input type="file" name="Attach File" id="Attach File"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend Align="left"> How you found us. </legend>
+            <table>
+                <tr>
+                    <td> How đi your hear of us</td>
+                    <td> <select name="choose" id="choose" size="">
+                    <option value="" > Google</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td>Newsletter</td>
+                    <td> <input type="checkbox" name="Newsletter" id="Newsletter">Ensure this box is checked if you would like to receive email updates</td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="Send message"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+
+</html>
