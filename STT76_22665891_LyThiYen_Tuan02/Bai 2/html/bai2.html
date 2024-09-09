@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+        
+        #container {
+            border: 1px solid black;
+            width: 1000px;
+            height: 780px;
+            box-shadow: 5px 5px 5px gray, -5px -5px 5px gray;
+            margin-top: 100px;
+        }
+        
+        header {
+            width: 980px;
+            height: 200px;
+            margin-top: 10px;
+            background-image: url(../img/background.png);
+        }
+        
+        #anh1 {
+            height: 140px;
+        }
+        
+        nav {
+            width: auto;
+            height: 40px;
+            margin-top: 10px;
+            background-color: rgb(193, 193, 193);
+        }
+        
+        #t1 {
+            margin-left: 10px;
+        }
+        
+        #header-1 {
+            color: white;
+            letter-spacing: 3px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        #header-2 {
+            color: white;
+            letter-spacing: 1px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        nav {
+            color: white;
+            text-align: center;
+        }
+        
+        #ul-1>li {
+            font-size: x-large;
+            margin-top: 10px;
+            padding-right: 110px;
+            list-style-type: none;
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+        
+        #ul-1>li:hover {
+            color: black;
+            border-radius: 10px;
+        }
+        
+        #sec0 {
+            width: 70%;
+            float: left;
+            height: 500px;
+            position: relative;
+        }
+        
+        #sec0::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -5px;
+            /* Điều chỉnh giá trị này nếu cần */
+            width: 1px;
+            /* Độ rộng của đường kẻ */
+            height: calc(100% + 30px);
+            /* Chiều cao dài hơn để chạm footer */
+            background-color: rgb(225, 216, 216);
+            /* Màu của đường kẻ */
+        }
+        
+        article {
+            margin-top: 10px;
+            margin-left: 50px;
+            padding-top: 20px;
+            height: 50%;
+        }
+        
+        #red {
+            color: brown;
+        }
+        
+        aside {
+            width: 30%;
+            height: 500px;
+            float: left;
+        }
+        
+        section {
+            height: 50%;
+        }
+        
+        section>ul>li {
+            list-style-type: none;
+        }
+        
+        #sec1 {
+            margin-top: 30px;
+            color: brown;
+        }
+        
+        #txt1 {
+            display: contents;
+        }
+        
+        #txt1>p {
+            margin-left: 30px;
+        }
+        
+        #txt1>h2 {
+            margin-left: 30px;
+        }
+        
+        #ul2>li {
+            border-bottom: 1px solid rgb(225, 216, 216);
+            padding-bottom: 10px;
+            padding-top: 5px;
+            font-size: 20px;
+        }
+        
+        #sec2 {
+            margin-top: 30px;
+        }
+        
+        #sec2>h2 {
+            color: brown;
+        }
+        
+        #ul3 {
+            padding-left: 30px;
+        }
+        
+        footer {
+            width: 980px;
+            height: 30px;
+            background-color: rgb(193, 193, 193);
+            float: left;
+            margin-left: 10px;
+            color: white;
+            padding-top: 10px;
+            padding-left: 20px;
+            margin-top: 30px;
+        }
+        
+        .image-container {
+            border: 1px solid rgb(225, 216, 216);
+            padding: 5px;
+            width: fit-content;
+        }
+        
+        .image-container img {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <table id="t1">
+                <tr>
+                    <td><img src="../img/logo.png" alt="anh1" id="anh1"></td>
+                    <td>
+                        <h1 id="header-1"> YOKO'S KITCHEN</h1>
+                        <h3 id="header-2">JAPANESE COOKING CLASSES</h3>
+                    </td>
+                </tr>
+            </table>
+            <nav>
+                <ul id="ul-1">
+                    <li>home</li>
+                    <li>classes</li>
+                    <li>catering</li>
+                    <li>about</li>
+                    <li> contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="sec0">
+            <article>
+                <table id="t2">
+                    <tr>
+                        <td class="image-container"><img src="../img/bok-choi.jpg" alt="anh3" id="anh3">Bok Choi</td>
+                        <td id="txt1">
+                            <p>
+                                <h2>Japanese Vegetarian</h2>
+                            </p>
+                            <p id="red">Five week course in London</p>
+                            <br>
+                            <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <table>
+                    <tr>
+                        <td class="image-container"><img src="../img/teriyaki.jpg" alt="anh4" id="anh4">Teriyaki Sauce</td>
+                        <td id="txt1">
+                            <p>
+                                <h2>Sauces Masterclass</h2>
+                            </p>
+                            <p id="red">One day workshop</p>
+                            <br>
+                            <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <aside>
+            <section id="sec1">
+                <h2 style="padding-left: 30px;">Popular Recipies</h2>
+                <br>
+                <ul id="ul2">
+                    <li>Yakitori (grilled chicken)</li>
+                    <li>Tsukune (minced chicken patties)</li>
+                    <li>Okonomiyaki (savory pancakes)</li>
+                    <li>Mizutaki (chicken stew)</li>
+                </ul>
+            </section>
+            <section id="sec2">
+                <h2 style="padding-left: 30px;">Contact</h2>
+                <br>
+                <ul id="ul3">
+                    <li>Yoko's Kitchen</li>
+                    <li>27 Redchurch Street</li>
+                    <li>Shoreditch</li>
+                    <li>London E2 7DP</li>
+                </ul>
+            </section>
+        </aside>
+        <footer>
+            © 2011 Yoko's Kitchen
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
